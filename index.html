@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>涅槃陶语 NIEPAN TAOYU — 以火为刃，以土为骨，赴一场戈壁的重生</title>
+    <meta name="description" content="涅槃陶语，西北人文粗陶器物文创品牌，融合传统粗陶烧制工艺与戈壁粗粝质感，打造适配现代极简轻奢的手工粗陶器物。">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=Noto+Sans+SC:wght@300;400;500;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Page Loader -->
+    <div class="page-loader" id="pageLoader">
+        <div class="loader-logo">涅槃陶语</div>
+        <div class="loader-line"></div>
+    </div>
+
+    <!-- Noise Texture Overlay -->
+    <div class="noise-overlay"></div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="navbar-inner">
+            <a href="#" class="nav-logo">
+                <img src="images/logo.png" alt="涅槃陶语" class="nav-logo-img">
+                <div>
+                    涅槃陶语
+                    <span>NIEPAN TAOYU</span>
+                </div>
+            </a>
+            <div class="nav-links">
+                <a href="#story" class="nav-link">品牌故事</a>
+                <a href="#products" class="nav-link">产品系列</a>
+                <a href="#craft" class="nav-link">工艺流程</a>
+                <a href="#contact" class="nav-link">联系我们</a>
+                <a href="#contact" class="nav-cta">定制咨询</a>
+            </div>
+            <div class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <img src="images/hero-bg.jpg" alt="涅槃陶语花器">
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-brand">涅槃陶语</h1>
+                <p class="hero-en">NIEPAN TAOYU</p>
+                <p class="hero-slogan">以火为刃，以土为骨，赴一场戈壁的重生</p>
+                <div class="hero-cta-group">
+                    <a href="#products" class="btn-primary">探索产品</a>
+                    <a href="#story" class="btn-outline-white">了解品牌</a>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator" onclick="document.getElementById('story').scrollIntoView({behavior: 'smooth'})">
+            <span class="scroll-indicator-text">SCROLL</span>
+            <div class="scroll-indicator-line"></div>
+        </div>
+    </section>
+
+    <!-- Brand Story Section -->
+    <section class="brand-story section" id="story">
+        <div class="container">
+            <div class="story-grid">
+                <div class="story-content reveal-left">
+                    <span class="section-label">Brand Story</span>
+                    <h2 class="section-title">从戈壁到案头<br>一场泥土的涅槃之旅</h2>
+                    <blockquote class="story-quote">
+                        "每一件花器，都是一次与大地的对话。我们取戈壁之土，承古法之艺，让粗陶在火焰中重生。"
+                    </blockquote>
+                    <p class="story-text">
+                        涅槃陶语诞生于西北戈壁的风蚀地貌之中，品牌灵感源自古代夯土城墙的岁月肌理与雅丹风蚀的自然美学。我们相信，真正的美，不在于精致无瑕，而在于时间与自然赋予的粗粝质感。
+                    </p>
+                    <p class="story-text">
+                        每一件花器都由匠人手工制作，从泥料的筛选、泥板的裁切，到坯体的拼接、入窑的烧制，全程遵循传统陶艺工艺，同时融入现代极简设计理念，打造出既适配当代生活空间，又承载东方文化底蕴的器物。
+                    </p>
+                    <a href="#craft" class="btn-secondary">探索工艺</a>
+                </div>
+                <div class="story-visual reveal-right">
+                    <div class="story-image-wrapper">
+                        <img src="images/story-main.jpg" alt="戈壁灵感" class="story-image">
+                        <div class="story-image-caption">戈壁风蚀地貌 — 花器肌理的灵感之源</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products section" id="products">
+        <div class="container">
+            <div class="products-header reveal">
+                <span class="section-label">Products</span>
+                <h2 class="section-title">花器系列</h2>
+                <p class="section-desc">六款不同造型的花器，每一款都承载着戈壁的粗犷与东方的雅致</p>
+                <div class="filter-tabs">
+                    <button class="filter-tab active" data-filter="all">全部系列</button>
+                    <button class="filter-tab" data-filter="geometric">几何系列</button>
+                    <button class="filter-tab" data-filter="organic">自然系列</button>
+                    <button class="filter-tab" data-filter="minimal">极简系列</button>
+                </div>
+            </div>
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <div class="product-card reveal" data-category="geometric">
+                    <div class="corner corner-tl"></div>
+                    <div class="corner corner-tr"></div>
+                    <div class="corner corner-bl"></div>
+                    <div class="corner corner-br"></div>
+                    <div class="product-image-wrap" data-lightbox="images/product-1.jpg" data-caption="戈壁方柱花器">
+                        <img src="images/product-1.jpg" alt="戈壁方柱花器" class="product-image">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-tag">Geometric Series</span>
+                        <h3 class="product-name">戈壁方柱</h3>
+                        <p class="product-desc">灵感源自戈壁雅丹地貌的方柱造型，粗陶肌理与几何线条的碰撞</p>
+                        <div class="product-footer">
+                            <span class="product-price">¥ 680</span>
+                            <button class="product-btn">了解详情</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card reveal" data-category="organic">
+                    <div class="corner corner-tl"></div>
+                    <div class="corner corner-tr"></div>
+                    <div class="corner corner-bl"></div>
+                    <div class="corner corner-br"></div>
+                    <div class="product-image-wrap" data-lightbox="images/product-2.jpg" data-caption="风蚀圆融花器">
+                        <img src="images/product-2.jpg" alt="风蚀圆融花器" class="product-image">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-tag">Organic Series</span>
+                        <h3 class="product-name">风蚀圆融</h3>
+                        <p class="product-desc">取法自然风蚀的圆润形态，表面保留手工制作的温度痕迹</p>
+                        <div class="product-footer">
+                            <span class="product-price">¥ 580</span>
+                            <button class="product-btn">了解详情</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card reveal" data-category="minimal">
+                    <div class="corner corner-tl"></div>
+                    <div class="corner corner-tr"></div>
+                    <div class="corner corner-bl"></div>
+                    <div class="corner corner-br"></div>
+                    <div class="product-image-wrap" data-lightbox="images/product-3.jpg" data-caption="素坯极简花器">
+                        <img src="images/product-3.jpg" alt="素坯极简花器" class="product-image">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-tag">Minimal Series</span>
+                        <h3 class="product-name">素坯极简</h3>
+                        <p class="product-desc">极简主义与粗陶质感的融合，适配现代简约生活空间</p>
+                        <div class="product-footer">
+                            <span class="product-price">¥ 520</span>
+                            <button class="product-btn">了解详情</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card reveal" data-category="geometric">
+                    <div class="corner corner-tl"></div>
+                    <div class="corner corner-tr"></div>
+                    <div class="corner corner-bl"></div>
+                    <div class="corner corner-br"></div>
+                    <div class="product-image-wrap" data-lightbox="images/product-4.jpg" data-caption="夯土城墙花器">
+                        <img src="images/product-4.jpg" alt="夯土城墙花器" class="product-image">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-tag">Geometric Series</span>
+                        <h3 class="product-name">夯土城墙</h3>
+                        <p class="product-desc">致敬古代夯土城墙的层理肌理，厚重而不失精致</p>
+                        <div class="product-footer">
+                            <span class="product-price">¥ 720</span>
+                            <button class="product-btn">了解详情</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="product-card reveal" data-category="organic">
+                    <div class="corner corner-tl"></div>
+                    <div class="corner corner-tr"></div>
+                    <div class="corner corner-bl"></div>
+                    <div class="corner corner-br"></div>
+                    <div class="product-image-wrap" data-lightbox="images/product-5.jpg" data-caption="戈壁原石花器">
+                        <img src="images/product-5.jpg" alt="戈壁原石花器" class="product-image">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-tag">Organic Series</span>
+                        <h3 class="product-name">戈壁原石</h3>
+                        <p class="product-desc">模拟天然岩石的不规则形态，每一件都是独一无二的存在</p>
+                        <div class="product-footer">
+                            <span class="product-price">¥ 650</span>
+                            <button class="product-btn">了解详情</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="product-card reveal" data-category="minimal">
+                    <div class="corner corner-tl"></div>
+                    <div class="corner corner-tr"></div>
+                    <div class="corner corner-bl"></div>
+                    <div class="corner corner-br"></div>
+                    <div class="product-image-wrap" data-lightbox="images/product-6.jpg" data-caption="侘寂长瓶花器">
+                        <img src="images/product-6.jpg" alt="侘寂长瓶花器" class="product-image">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-tag">Minimal Series</span>
+                        <h3 class="product-name">侘寂长瓶</h3>
+                        <p class="product-desc">侘寂美学的极致表达，简约线条承载岁月的沉淀</p>
+                        <div class="product-footer">
+                            <span class="product-price">¥ 560</span>
+                            <button class="product-btn">了解详情</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Craft Process Section -->
+    <section class="craft-process section" id="craft">
+        <div class="container">
+            <div class="craft-header reveal">
+                <span class="section-label">Craftsmanship</span>
+                <h2 class="section-title">手工制作全流程</h2>
+                <p class="section-desc">从泥料到成品，每一步都凝聚着匠人的心血与智慧</p>
+            </div>
+            <div class="craft-timeline">
+                <!-- Step 1 -->
+                <div class="craft-step reveal">
+                    <div class="craft-step-content">
+                        <h3 class="craft-step-title">创意手绘定稿</h3>
+                        <p class="craft-step-desc">围绕花器的设计理念、器型结构、尺寸规格、夯土肌理效果，绘制全套手绘草图，敲定最终创意方案，明确设计核心要求与验收标准。</p>
+                    </div>
+                    <div class="craft-step-number">
+                        <div class="craft-step-dot">01</div>
+                    </div>
+                    <div class="craft-step-image">
+                        <img src="images/craft-1.jpg" alt="创意手绘定稿">
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="craft-step reveal">
+                    <div class="craft-step-content">
+                        <h3 class="craft-step-title">3D 数字建模</h3>
+                        <p class="craft-step-desc">基于定稿的手绘草图，构建 1:1 精准 3D 数据模型，校验器型结构稳定性、尺寸精度、肌理呈现效果，输出标准化制作参数，完全锁定成品形态，规避手工制作阶段的返工风险。</p>
+                    </div>
+                    <div class="craft-step-number">
+                        <div class="craft-step-dot">02</div>
+                    </div>
+                    <div class="craft-step-image">
+                        <img src="images/craft-2.jpg" alt="3D 数字建模">
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="craft-step reveal">
+                    <div class="craft-step-content">
+                        <h3 class="craft-step-title">专属泥料制备</h3>
+                        <p class="craft-step-desc">精选戈壁优质陶土，经多轮精细筛选、充分陈腐，确保泥料的纯净度与可塑性；再按照 3D 模型的参数要求，擀制成厚度均匀、尺寸精准的泥板，完成成型前的备料工作。</p>
+                    </div>
+                    <div class="craft-step-number">
+                        <div class="craft-step-dot">03</div>
+                    </div>
+                    <div class="craft-step-image">
+                        <img src="images/craft-3.jpg" alt="专属泥料制备">
+                    </div>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="craft-step reveal">
+                    <div class="craft-step-content">
+                        <h3 class="craft-step-title">肌理制作与坯体成型</h3>
+                        <p class="craft-step-desc">手工复刻夯土城墙的层理肌理，赋予坯体专属的视觉质感与触觉体验；再按模型参数精准裁切泥板，严丝合缝拼接成完整器型，精细修整接缝与边缘，确保坯体结构稳固、形态与数字模型完全一致。</p>
+                    </div>
+                    <div class="craft-step-number">
+                        <div class="craft-step-dot">04</div>
+                    </div>
+                    <div class="craft-step-image">
+                        <img src="images/craft-4.jpg" alt="肌理制作与坯体成型">
+                    </div>
+                </div>
+
+                <!-- Step 5 -->
+                <div class="craft-step reveal">
+                    <div class="craft-step-content">
+                        <h3 class="craft-step-title">素坯阴干与精细修坯</h3>
+                        <p class="craft-step-desc">成型后的坯体置于恒温恒湿环境中自然阴干，全程分阶段多次进行精细修坯，校准尺寸、打磨表面、修正细节，确保每一处都符合设计标准，从源头杜绝烧制过程中的变形、开裂风险。</p>
+                    </div>
+                    <div class="craft-step-number">
+                        <div class="craft-step-dot">05</div>
+                    </div>
+                    <div class="craft-step-image">
+                        <img src="images/craft-5.jpg" alt="素坯阴干与精细修坯">
+                    </div>
+                </div>
+
+                <!-- Step 6 -->
+                <div class="craft-step reveal">
+                    <div class="craft-step-content">
+                        <h3 class="craft-step-title">高温窑烧涅槃成器</h3>
+                        <p class="craft-step-desc">精修达标后的素坯入窑，经高温全程烧制，泥土在烈焰中完成固化与蜕变，最终成就兼具设计质感、结构强度与独特人文内核的成品花器。</p>
+                    </div>
+                    <div class="craft-step-number">
+                        <div class="craft-step-dot">06</div>
+                    </div>
+                    <div class="craft-step-image">
+                        <img src="images/craft-6.jpg" alt="高温窑烧涅槃成器">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact section" id="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-content reveal-left">
+                    <span class="section-label">Contact</span>
+                    <h2 class="section-title">联系我们</h2>
+                    <p class="section-desc">
+                        无论是产品咨询、定制需求，还是合作洽谈，我们都期待与您建立联系。
+                    </p>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                            </div>
+                            <div class="contact-item-text">
+                                <h4>工作室地址</h4>
+                                <p>兰州市七里河区省建筑学院陶艺工作室</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                                </svg>
+                            </div>
+                            <div class="contact-item-text">
+                                <h4>联系电话</h4>
+                                <p>130-9928-0907</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg>
+                            </div>
+                            <div class="contact-item-text">
+                                <h4>电子邮箱</h4>
+                                <p>276818881@qq.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form reveal-right">
+                    <form id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label" for="name">姓名</label>
+                                <input type="text" id="name" class="form-input" placeholder="请输入您的姓名" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="phone">电话</label>
+                                <input type="tel" id="phone" class="form-input" placeholder="请输入您的电话" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="email">邮箱</label>
+                            <input type="email" id="email" class="form-input" placeholder="请输入您的邮箱">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="subject">咨询主题</label>
+                            <select id="subject" class="form-input">
+                                <option value="">请选择咨询主题</option>
+                                <option value="product">产品咨询</option>
+                                <option value="custom">定制需求</option>
+                                <option value="cooperation">商务合作</option>
+                                <option value="other">其他</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="message">留言内容</label>
+                            <textarea id="message" class="form-textarea" placeholder="请详细描述您的需求..." required></textarea>
+                        </div>
+                        <button type="submit" class="form-submit">提交咨询</button>
+                        <div class="form-message" id="formMessage"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Smooth Scroll Indicator -->
+    <div class="smooth-scroll-wrapper" id="smoothScrollIndicator">
+        <div class="scroll-dot active" data-label="首页" data-target="hero"></div>
+        <div class="scroll-dot" data-label="品牌故事" data-target="story"></div>
+        <div class="scroll-dot" data-label="产品系列" data-target="products"></div>
+        <div class="scroll-dot" data-label="工艺流程" data-target="craft"></div>
+        <div class="scroll-dot" data-label="联系我们" data-target="contact"></div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <img src="images/logo.png" alt="涅槃陶语" class="footer-logo-img">
+                        <span class="footer-logo-text">涅槃陶语</span>
+                    </div>
+                    <p class="footer-desc">
+                        以火为刃，以土为骨，赴一场戈壁的重生。我们致力于将西北粗陶工艺与现代美学融合，打造适配当代生活的东方器物。
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="微信">
+                            <svg viewBox="0 0 24 24"><path d="M8.5 11a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm5 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm-2.5 2c-3.5 0-6.5 2.5-6.5 5.5 0 1.7.8 3.2 2 4.2l-.8 2.3 2.5-1.3c.8.2 1.5.3 2.3.3 3.5 0 6.5-2.5 6.5-5.5S14.5 13 11 13z"/></svg>
+                        </a>
+                        <a href="#" aria-label="小红书">
+                            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                        </a>
+                        <a href="#" aria-label="抖音">
+                            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>产品系列</h4>
+                    <ul class="footer-links">
+                        <li><a href="#products">几何系列</a></li>
+                        <li><a href="#products">自然系列</a></li>
+                        <li><a href="#products">极简系列</a></li>
+                        <li><a href="#products">限定款</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>品牌</h4>
+                    <ul class="footer-links">
+                        <li><a href="#story">品牌故事</a></li>
+                        <li><a href="#craft">工艺流程</a></li>
+                        <li><a href="#">匠人介绍</a></li>
+                        <li><a href="#">媒体报道</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>服务</h4>
+                    <ul class="footer-links">
+                        <li><a href="#contact">联系我们</a></li>
+                        <li><a href="#">定制服务</a></li>
+                        <li><a href="#">售后服务</a></li>
+                        <li><a href="#">常见问题</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-copyright">&copy; 2026 涅槃陶语 NIEPAN TAOYU. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">隐私政策</a>
+                    <a href="#">使用条款</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="返回顶部">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+    </button>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <button class="lightbox-close" id="lightboxClose">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+            <button class="lightbox-nav lightbox-prev" id="lightboxPrev">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="15 18 9 12 15 6"></polyline>
+                </svg>
+            </button>
+            <img src="" alt="" class="lightbox-image" id="lightboxImage">
+            <button class="lightbox-nav lightbox-next" id="lightboxNext">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+            </button>
+            <div class="lightbox-caption" id="lightboxCaption"></div>
+        </div>
+    </div>
+
+    <!-- Floating Gallery Button -->
+    <div class="floating-gallery-btn" id="floatingGalleryBtn">
+        <div class="floating-btn-inner">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                <polyline points="21 15 16 10 5 21"></polyline>
+            </svg>
+            <span>项目图集</span>
+        </div>
+    </div>
+
+    <!-- Gallery Modal -->
+    <div class="gallery-modal" id="galleryModal">
+        <div class="gallery-modal-header">
+            <h2>项目图集</h2>
+            <p>涅槃陶语花器设计全流程记录</p>
+            <button class="gallery-modal-close" id="galleryModalClose">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+        <div class="gallery-modal-body">
+            <!-- 系列一：设计灵感 -->
+            <div class="gallery-series">
+                <div class="gallery-series-header">
+                    <span class="gallery-series-number">01</span>
+                    <h3>花器设计灵感素材系列</h3>
+                    <p>东方夯土美学、荒野自然肌理风、侘寂风化质感</p>
+                </div>
+                <div class="gallery-series-grid">
+                    <div class="gallery-series-item" data-caption="中式古代夯土城墙敌楼">
+                        <img src="images/inspiration-1.jpg" alt="夯土城墙" loading="lazy">
+                    </div>
+                    <div class="gallery-series-item" data-caption="沙漠戈壁古城遗址">
+                        <img src="images/inspiration-2.jpg" alt="戈壁遗址" loading="lazy">
+                    </div>
+                    <div class="gallery-series-item" data-caption="雅丹风蚀地貌">
+                        <img src="images/inspiration-3.jpg" alt="风蚀地貌" loading="lazy">
+                    </div>
+                    <div class="gallery-series-item" data-caption="天然岩石肌理原石">
+                        <img src="images/inspiration-4.jpg" alt="岩石肌理" loading="lazy">
+                    </div>
+                    <div class="gallery-series-item" data-caption="陶艺色料肌理试片">
+                        <img src="images/inspiration-5.jpg" alt="色料试片" loading="lazy">
+                    </div>
+                </div>
+            </div>
+
+            <!-- 系列二：产品研发 -->
+            <div class="gallery-series">
+                <div class="gallery-series-header">
+                    <span class="gallery-series-number">02</span>
+                    <h3>花器产品设计研发系列</h3>
+                    <p>极简几何解构风、东方工业产品设计、标准化产品研发逻辑</p>
+                </div>
+                <div class="gallery-series-grid">
+                    <div class="gallery-series-item" data-caption="铅笔手绘花器结构草稿">
+                        <img src="images/design-1.jpg" alt="手绘草稿" loading="lazy">
+                    </div>
+                    <div class="gallery-series-item" data-caption="尺寸标注与产品三视图">
+                        <img src="images/design-2.jpg" alt="三视图" loading="lazy">
+                    </div>
+                    <div class="gallery-series-item" data-caption="结构推演图">
+                        <img src="images/design-3.jpg" alt="结构图" loading="lazy">
+                    </div>
+                    <div class="gallery-series-item" data-caption="3D建模实操过程">
+                        <img src="images/design-4.jpg" alt="3D建模" loading="lazy">
+                    </div>
+                    <div class="gallery-series-item" data-caption="3D渲染效果图">
+                        <img src="images/design-5.jpg" alt="渲染图" loading="lazy">
+                    </div>
+                    <div class="gallery-series-item" data-caption="水泥质感卡通IP形象">
+                        <img src="images/design-6.jpg" alt="IP形象" loading="lazy">
+                    </div>
+                </div>
+            </div>
+
+            <!-- 系列三：制作工艺 -->
+            <div class="gallery-series">
+                <div class="gallery-series-header">
+                    <span class="gallery-series-number">03</span>
+                    <h3>花器陶艺手工制作全流程系列</h3>
+                    <p>匠人手作质感、非遗陶艺工艺、侘寂手工美学</p>
+                </div>
+                <div class="gallery-series-grid gallery-series-grid-large">
+                    <div class="gallery-series-item" data-caption="陶土泥板裁切">
+                        <img src="images/process-1.jpg" alt="泥板裁切" loading="lazy">
+                    </div>
+                    <div class="gallery-series-item" data-caption="备料晾干">
+                        <img src="images/process-2.jpg" alt="备料晾干" loading="lazy">
+                    </div>
+                    <div class="gallery-series-item" data-caption="仿夯土肌理手工制作">
+                        <img src="images/process-3.jpg" alt="肌理制作" loading="lazy">
+                    </div>
+                    <div class="gallery-series-item" data-caption="泥板精准尺寸测量">
+                        <img src="images/process-4.jpg" alt="尺寸测量" loading="lazy">
+                    </div>
+                    <div class="gallery-series-item" data-caption="泥板裁切">
+                        <img src="images/process-5.jpg" alt="泥板裁切" loading="lazy">
+                    </div>
+                    <div class="gallery-series-item" data-caption="花器坯体手工拼接成型">
+                        <img src="images/process-6.jpg" alt="坯体拼接" loading="lazy">
+                    </div>
+                    <div class="gallery-series-item" data-caption="坯体细节修整">
+                        <img src="images/process-7.jpg" alt="细节修整" loading="lazy">
+                    </div>
+                    <div class="gallery-series-item" data-caption="多款造型素坯成品合集">
+                        <img src="images/process-8.jpg" alt="素坯合集" loading="lazy">
+                    </div>
+                    <div class="gallery-series-item" data-caption="素坯入窑烧制">
+                        <img src="images/process-9.jpg" alt="入窑烧制" loading="lazy">
+                    </div>
+                    <div class="gallery-series-item" data-caption="高温窑烧过程">
+                        <img src="images/process-10.jpg" alt="窑烧过程" loading="lazy">
+                    </div>
+                    <div class="gallery-series-item" data-caption="烧制完成出窑">
+                        <img src="images/process-11.jpg" alt="出窑" loading="lazy">
+                    </div>
+                    <div class="gallery-series-item" data-caption="成品检验">
+                        <img src="images/process-12.jpg" alt="成品检验" loading="lazy">
+                    </div>
+                    <div class="gallery-series-item" data-caption="表面处理">
+                        <img src="images/process-13.jpg" alt="表面处理" loading="lazy">
+                    </div>
+                    <div class="gallery-series-item" data-caption="品质把控">
+                        <img src="images/process-14.jpg" alt="品质把控" loading="lazy">
+                    </div>
+                    <div class="gallery-series-item" data-caption="最终成品">
+                        <img src="images/process-15.jpg" alt="最终成品" loading="lazy">
+                    </div>
+                </div>
+            </div>
+
+            <!-- 系列四：成品展示 -->
+            <div class="gallery-series">
+                <div class="gallery-series-header">
+                    <span class="gallery-series-number">04</span>
+                    <h3>花器成品与花艺应用展示系列</h3>
+                    <p>东方禅意花艺、居家侘寂美学、自然风装置艺术</p>
+                </div>
+                <div class="gallery-series-grid">
+                    <div class="gallery-series-item" data-caption="室内窗边居家柔和光环境">
+                        <img src="images/showcase-1.jpg" alt="室内展示" loading="lazy">
+                    </div>
+                    <div class="gallery-series-item" data-caption="户外广场晴天日光环境">
+                        <img src="images/showcase-2.jpg" alt="户外展示" loading="lazy">
+                    </div>
+                    <div class="gallery-series-item" data-caption="花艺装置效果">
+                        <img src="images/showcase-3.jpg" alt="花艺效果" loading="lazy">
+                    </div>
+                    <div class="gallery-series-item" data-caption="居家场景应用">
+                        <img src="images/showcase-4.jpg" alt="居家应用" loading="lazy">
+                    </div>
+                    <div class="gallery-series-item" data-caption="桌面摆件效果">
+                        <img src="images/showcase-5.jpg" alt="桌面摆件" loading="lazy">
+                    </div>
+                    <div class="gallery-series-item" data-caption="空间装饰效果">
+                        <img src="images/showcase-6.jpg" alt="空间装饰" loading="lazy">
+                    </div>
+                    <div class="gallery-series-item" data-caption="花器与花材搭配">
+                        <img src="images/showcase-7.jpg" alt="花材搭配" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Gallery Lightbox -->
+    <div class="gallery-lightbox" id="galleryLightbox">
+        <button class="gallery-lightbox-close" id="galleryLightboxClose">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+        </button>
+        <button class="gallery-lightbox-nav gallery-lightbox-prev" id="galleryLightboxPrev">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+        </button>
+        <div class="gallery-lightbox-content">
+            <img id="galleryLightboxImg" src="" alt="">
+            <div class="gallery-lightbox-caption" id="galleryLightboxCaption"></div>
+        </div>
+        <button class="gallery-lightbox-nav gallery-lightbox-next" id="galleryLightboxNext">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+        </button>
+    </div>
+
+    <!-- ========== CHAT WIDGET ========== -->
+    <div class="chat-widget" id="chatWidget">
+        <!-- 浮动聊天按钮 -->
+        <div class="chat-toggle" id="chatToggle" aria-label="在线咨询">
+            <svg class="chat-toggle-icon chat-icon-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/>
+            </svg>
+            <svg class="chat-toggle-icon chat-icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="display:none;">
+                <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+            </svg>
+            <span class="chat-badge" id="chatBadge">1</span>
+        </div>
+
+        <!-- 聊天窗口 -->
+        <div class="chat-window" id="chatWindow">
+            <div class="chat-header">
+                <div class="chat-header-info">
+                    <div class="chat-avatar">
+                        <img src="images/logo.png" alt="涅槃陶语" onerror="this.style.display='none'">
+                    </div>
+                    <div>
+                        <h4>涅槃陶语 · 在线客服</h4>
+                        <span class="chat-status">
+                            <span class="chat-status-dot"></span>
+                            在线 · 通常1小时内回复
+                        </span>
+                    </div>
+                </div>
+                <button class="chat-header-close" id="chatHeaderClose" aria-label="关闭">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="chat-messages" id="chatMessages">
+                <!-- 欢迎消息 -->
+                <div class="chat-msg bot">
+                    <div class="chat-msg-avatar">陶</div>
+                    <div class="chat-msg-content">
+                        <p>您好，欢迎来到涅槃陶语。</p>
+                        <p>我是您的专属顾问，可以为您解答关于花器设计、定制工艺、购买方式等问题。</p>
+                        <div class="chat-quick-replies">
+                            <button class="chat-quick-btn" data-key="产品">了解产品</button>
+                            <button class="chat-quick-btn" data-key="工艺">制作工艺</button>
+                            <button class="chat-quick-btn" data-key="定制">定制服务</button>
+                            <button class="chat-quick-btn" data-key="购买">如何购买</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chat-input-area">
+                <input type="text" class="chat-input" id="chatInput" placeholder="输入您的问题..." autocomplete="off">
+                <button class="chat-send-btn" id="chatSendBtn" aria-label="发送">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="main.js"></script>
+    <script src="gallery.js"></script>
+</body>
+</html>
